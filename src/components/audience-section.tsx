@@ -59,21 +59,21 @@ export function AudienceSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" className="font-mono">
                     <a
+                        href={import.meta.env.VITE_GET_IN_TOUCH_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get in touch
+                    </a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="font-mono">
+                    <a
                         href="https://github.com/openintentsframework"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <Github className="size-4" aria-hidden="true" />
                         GitHub
-                    </a>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="font-mono">
-                    <a
-                        href="https://docs.openintents.xyz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Documentation
                     </a>
                 </Button>
             </div>
