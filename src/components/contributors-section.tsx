@@ -59,7 +59,7 @@ export function ContributorsSection() {
                         className="flex items-center justify-center gap-2 rounded-lg border border-border bg-card px-4 py-5 font-mono text-xs text-muted-foreground hover:text-foreground hover:border-accent/50 transition-colors"
                     >
                         <img
-                            src={`/favicons/${new URL(contributor.url).hostname}.png`}
+                            src={`${import.meta.env.BASE_URL}favicons/${new URL(contributor.url).hostname}.png`}
                             alt={`${contributor.name} logo`}
                             width={16}
                             height={16}
