@@ -59,7 +59,7 @@ export function AudienceSection() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg" className="font-mono">
                     <a
-                        href={import.meta.env.VITE_GET_IN_TOUCH_URL}
+                        href={import.meta.env.VITE_GET_IN_TOUCH_URL || "https://forms.gle/D7JSpBLj6He5J65Z6"}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
