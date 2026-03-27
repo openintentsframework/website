@@ -29,15 +29,15 @@ export function PrinciplesSection() {
                 {PRINCIPLES.map((principle) => (
                     <div
                         key={principle.title}
-                        className="rounded-lg border border-border bg-card p-5 lg:p-6"
+                        className="p-5 lg:p-6"
                     >
                         <principle.icon
-                            className="size-8 text-accent mb-3"
+                            className="size-6 text-muted-foreground mb-3"
                             strokeWidth={1.5}
                             aria-hidden="true"
                         />
-                        <h3 className="font-mono text-lg font-medium mb-3">{principle.title}</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                        <h3 className="font-mono text-base font-medium mb-2 text-muted-foreground">{principle.title}</h3>
+                        <p className="text-sm text-muted-foreground/70 leading-relaxed">
                             {principle.description}
                         </p>
                     </div>
